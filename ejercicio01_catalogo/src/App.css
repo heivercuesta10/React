@@ -1,0 +1,75 @@
+* App.css */
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
+}
+
+.error {
+  color: #ff0000;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  padding: 10px;
+  background: #f9f9f9;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.product-title {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-description {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #2a6496;
+}
+
+.product-category {
+  font-size: 0.7rem;
+  color: #888;
+  text-transform: capitalize;
+}
